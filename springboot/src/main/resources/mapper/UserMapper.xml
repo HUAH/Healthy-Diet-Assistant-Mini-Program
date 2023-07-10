@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.test.mapper.UserMapper">
+
+<!--    <select id="getInfo" parameterType="String" resultType="com.example.test.bean.UserBean">-->
+<!--        SELECT * FROM user WHERE name = #{name} AND password = #{password}-->
+<!--    </select>-->
+
+    <select id="search" parameterType="String" resultType="com.example.test.bean.UserBean">
+        SELECT * FROM user WHERE imgurl = #{imgurl}
+    </select>
+
+    <select id="searchid" parameterType="double" resultType="com.example.test.bean.UserBean">
+        SELECT * FROM user WHERE UserID = #{UserID}
+    </select>
+
+    <select id="insert" parameterType="String" resultType="com.example.test.bean.UserBean">
+        INSERT INTO user (nickname,imgurl) VALUE (#{nickname},#{imgurl})
+    </select>
+    <select id="add"  resultType="com.example.test.bean.UserBean">
+        update user set gender=#{gender},height=#{height},age=#{age} ,BMI=#{BMI},weight=#{weight},fweight=#{fweight} WHERE UserID = #{userID}
+    </select>
+
+    <!--插入BMI数据-->
+    <select id="BMIInfo" resultType="com.example.test.bean.UserBean">
+        UPDATE user SET BMI = #{BMI} WHERE userID = #{userID};
+    </select>
+<!--    getInfo-->
+    <select id="getInfo" parameterType="int" resultType="com.example.test.bean.UserBean">
+        SELECT * FROM user WHERE UserID = #{UserID}
+    </select>
+
+<!--    <select id="add" parameterType="String" resultType="com.example.test.bean.UserBean">-->
+<!--&#45;&#45;         UPDATE 表名称 SET 列名称 = 新值 WHERE 列名称 = 某值-->
+<!--        UPDATE user SET weight=#{weight} WHERE id = #{user_id}-->
+<!--    </select>(,,  BMI, , ) VALUE (,,,)
+    -->
+</mapper>

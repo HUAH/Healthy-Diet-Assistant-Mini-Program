@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.test.mapper.FoodMapper">
+
+    <select id="getInfo" parameterType="String" resultType="com.example.test.bean.FoodBean">
+        SELECT * FROM food where FoodName like #{foodName};
+    </select>
+
+    <select id="getidInfo" parameterType="int" resultType="com.example.test.bean.FoodBean">
+        SELECT * FROM food where FoodID = #{foodID};
+    </select>
+
+    <select id="geteiInfo" parameterType="String" resultType="com.example.test.bean.FoodBean">
+        SELECT * FROM food where eigenvalue = #{eigenvalue};
+    </select>
+
+<!--    int userID,String chose,double foodheart,int foodID-->
+    <select id="insertb" resultType="com.example.test.bean.FoodBean">
+    INSERT INTO breakfastdata (UserID, foodID, foodheat ,foodName,time ) VALUES (#{userID}, #{foodID}, #{foodheart},#{foodName},#{time})
+    </select>
+    <select id="insertl" resultType="com.example.test.bean.FoodBean">
+        INSERT INTO lunchdata (UserID, foodID, foodheat,foodName,time) VALUES (#{userID}, #{foodID}, #{foodheart},#{foodName},#{time})
+    </select>
+    <select id="insertd" resultType="com.example.test.bean.FoodBean">
+        INSERT INTO dinnerdata (UserID, foodID, foodheat,foodName,time) VALUES (#{userID}, #{foodID}, #{foodheart},#{foodName},#{time})
+    </select>
+
+<!--    getallInfo-->
+    <select id="getallInfo"  resultType="com.example.test.bean.FoodBean">
+        SELECT * FROM food LIMIT 7 OFFSET #{pagenum}
+    </select>
+
+<!--    addInfo-->
+    <select id="addInfo"  resultType="com.example.test.bean.FoodBean">
+        insert INTO food (foodName ,heat,protein,fat,carbohydrate, eigenvalue) values (#{foodname},#{heat},#{protein},#{fat},#{carbohydrate},#{eigenvalue})
+    </select>
+
+<!--    del-->
+    <select id="del"  resultType="com.example.test.bean.FoodBean">
+        DELETE FROM food WHERE FoodID = #{id};
+    </select>
+
+    <!--    <select id="getlInfo" parameterType="int" resultType="com.example.test.bean.FoodBean">-->
+<!--        SELECT * FROM lunchdata where 1=1 and UserID = #{userID};-->
+<!--    </select>-->
+<!--    <select id="getdInfo" parameterType="int" resultType="com.example.test.bean.FoodBean">-->
+<!--        SELECT * FROM dinnerdata where 1=1 and UserID = #{userID};-->
+<!--    </select>-->
+
+</mapper>

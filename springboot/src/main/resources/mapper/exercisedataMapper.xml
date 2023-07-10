@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.test.mapper.ExercisedataMapper">
+    <select id="geteInfo"  resultType="com.example.test.bean.ExercisedataBean">
+        SELECT * FROM exercisedata where UserID = #{userID} and time = #{time};
+    </select>
+    <select id="deleInfo"  resultType="com.example.test.bean.ExercisedataBean">
+        DELETE FROM exercisedata WHERE UserID = #{userID} AND exercisedataID = #{exercisedataID};
+    </select>
+</mapper>

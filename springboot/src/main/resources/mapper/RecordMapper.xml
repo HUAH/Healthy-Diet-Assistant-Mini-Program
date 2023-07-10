@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.test.mapper.RecordMapper">
+<!--查询体重记录-->
+    <select id="getweightInfo" resultType="com.example.test.bean.RecordBean">
+        SELECT * FROM user where UserID= #{userID};
+    </select>
+
+<!--插入早餐数据-->
+    <select id="breakfastInfo" parameterType="int" resultType="com.example.test.bean.RecordBean">
+--         UPDATE record
+--         SET calorieIntake_bf = 'your_calorieIntake_bf',
+--             foodID = 'your_foodID'
+--         WHERE userID = 'your_userID';
+
+        UPDATE record SET calorieIntake_bf = #{calorieIntake_bf} , foodID = #{foodID} WHERE userID = #{userID};
+    </select>
+    <!--插入运动数据-->
+    <select id="calorieInfo" parameterType="int" resultType="com.example.test.bean.RecordBean">
+        UPDATE record SET calorieBurned = #{calorieBurned} , exerciseID=#{exerciseID} WHERE userID = #{userID};
+    </select>
+
+<!--    &lt;!&ndash;插入体重数据&ndash;&gt;-->
+<!--    <select id="weightInfo" resultType="com.example.test.bean.RecordBean">-->
+<!--        UPDATE record SET weight = #{weight} ,RecordDate=#{time} WHERE userID = #{userID};-->
+<!--    </select>-->
+
+    <!--插入BMI数据-->
+</mapper>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.test.mapper.WeightHistoryMapper">
+
+    <select id="getInfo" resultType="com.example.test.bean.WeightHistoryBean">
+        SELECT * FROM weighthistory where userID = #{userID};
+    </select>
+
+    <!--插入体重数据-->
+    <select id="weightInfo" resultType="com.example.test.bean.WeightHistoryBean">
+        INSERT INTO weighthistory (userid, time, weight) VALUES (#{userID}, #{time}, #{weight})
+    </select>
+    <select id="weightupdateInfo" resultType="com.example.test.bean.WeightHistoryBean">
+        update weighthistory set time=#{time}, weight=#{weight} where  weighthistoryID = #{usetimeid};
+    </select>
+    <select id="weightInfotoo" resultType="com.example.test.bean.WeightHistoryBean">
+        UPDATE user SET weight = #{weight} WHERE userID = #{userID};
+    </select>
+</mapper>
