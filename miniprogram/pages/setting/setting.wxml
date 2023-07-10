@@ -1,0 +1,6 @@
+<!--pages/setting/setting.wxml-->
+<!-- <text>pages/setting/setting.wxml</text> -->
+<view class="block2_">
+    <van-cell title="用户协议" is-link />
+    <van-cell title="隐私政策" is-link />
+</view>

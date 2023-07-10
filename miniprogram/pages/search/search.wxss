@@ -1,0 +1,48 @@
+/* pages/search/search.wxss */
+.block{
+    height: 100px;
+    width: 100%;
+}
+.inputcss {
+    position: relative;
+    height: 40px;
+   }
+    
+   .searchInput {
+    border: 1px solid #2c3036;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    border-radius: 20px;
+    color: #bebec4;
+    padding-left: 35px;
+   }
+   .search-btn{
+       background-color: green;
+       margin: auto;
+       height: 100px;
+       width: 150px;
+   }
+    .btn1 {
+        width: 80%;
+        margin-top: 20rpx;
+        background-color: burlywood;
+        color: white;
+        border-radius: 98rpx;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .btnImg {
+        margin-right: 8rpx;
+        width: 46rpx;
+        height: 46rpx;
+      }
+      
+      .btn1::after {
+        border-radius: 98rpx;
+        border: 0; 
+      }
+      

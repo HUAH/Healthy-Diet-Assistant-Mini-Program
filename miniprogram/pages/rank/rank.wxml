@@ -1,0 +1,32 @@
+<!--pages/rank/rank.wxml-->
+<view class='productNav'>
+  <!-- 左侧 -->
+  <view class='left'>
+    <view class="{{active==0?'selected':'normal'}}" id="0" bindtap='switchNav'>为您推荐</view>
+    <view class="{{active==1?'selected':'normal'}}" id="1" bindtap='switchNav'>电脑</view>
+    <view class="{{active==2?'selected':'normal'}}" id="2" bindtap='switchNav'>手机</view>
+    <view class="{{active==3?'selected':'normal'}}" id="3" bindtap='switchNav'>笔记本</view>
+  </view>
+  <!-- 右侧 -->
+  <view class='right'>
+    <view class='type'>
+      <!-- current:当前所在滑块的 index -->
+      <!-- vertical:滑动方向是否为纵向 -->
+      <swiper current='{{currentTab}}' vertical='{{true}}'>
+        <!-- catchtouchmove 阻止弹窗后滚动穿透 -->
+        <swiper-item id="0" catchtouchmove="false">
+          为您推荐
+        </swiper-item>
+        <swiper-item id="1" catchtouchmove="false">
+          手机
+        </swiper-item>
+        <swiper-item id="2" catchtouchmove="false">
+          电脑
+        </swiper-item>
+        <swiper-item id="3" catchtouchmove="false">
+          笔记本
+        </swiper-item>
+      </swiper> 
+    </view>
+  </view>
+</view>

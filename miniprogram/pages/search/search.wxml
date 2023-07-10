@@ -1,0 +1,24 @@
+<!--pages/search/search.wxml-->
+<view class="block" >
+    <view class="inputcss">
+    <input  class="searchInput" bindblur="handleInputChange" />
+    <!-- <view class="search-btn" bindtap="handleSearch">搜索</view> -->
+    <button class='btn1' bindtap="handleSearch" >
+        <image class='btnImg' src='../../images/search.png'></image>
+        <view>搜索</view>
+    </button>
+</view>
+</view>
+<!-- <view wx:for="{{list}}" wx:key="index" class="show" bindtap="godetial" data-id="{{list[index].foodID}}" >
+<image src="{{list[index].pic}}" style="height: 25px; width: 25px;"/>
+    {{list[index].foodID}}
+    {{list[index].foodName}}
+</view> -->
+<van-cell-group title="搜索结果如下">
+<view wx:for="{{list}}" wx:key="index" bindtap="godetial"  data-id="{{list[index].foodID}}" >
+    <!-- {{list[index].meadID}}
+    {{list[index].mealName}}
+    {{list[index].heat}} -->
+  <van-cell title="{{list[index].foodName}}" value="{{list[index].foodID}}"/>
+</view>
+</van-cell-group>

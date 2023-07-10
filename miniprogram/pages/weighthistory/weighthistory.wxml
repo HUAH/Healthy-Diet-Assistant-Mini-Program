@@ -1,0 +1,7 @@
+<!--pages/weighthistory/weighthistory.wxml-->
+<!-- <text>pages/weighthistory/weighthistory.wxml</text> -->
+<van-cell-group>
+<view wx:for="{{list}}" wx:key="index" class="show" data-id="{{list[index].weighthistoryID}}" >
+  <van-cell title="{{Timelist[index]}}" value="{{list[index].weight}} 公斤"/>
+</view>
+</van-cell-group>

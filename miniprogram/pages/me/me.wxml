@@ -1,0 +1,35 @@
+<!--pages/me/me.wxml-->
+<view class="block1">
+     <image src="{{touxiang}}" style="width:70px;height: 70px; margin-top: 10px;"></image>
+     <text bindtap="denglu" class="text-denglu">{{nicheng}}</text>
+</view>
+<view class="block2" bindtap="gopagemedetail">
+    <view class="weightcolumn">
+    {{weight}}
+    </view>
+    <view class="force">
+    {{fweight}}
+    </view>
+    <view class="BMIcolumn"> 
+    {{BMI}}
+    </view>
+    <view class="weightcolumndown"> 
+        当前（公斤）
+    </view>
+    <view class="forcedown"> 
+    目标（公斤）
+    </view>
+    <view class="BMIcolumndown">
+    BMI
+    </view>
+</view>
+<view class="block2_">
+    <van-cell title="商务合作" icon="manager-o" is-link />
+    <van-cell title="建议反馈" icon="info-o " is-link />
+</view>
+<view class="block2_">
+    <van-cell title="设置" bindtap="gopagesetting" icon="setting-o" is-link />
+</view>
+<!-- <view class="block3"></view>
+<view class="block4"></view> -->
+

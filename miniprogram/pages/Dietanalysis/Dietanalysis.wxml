@@ -1,0 +1,71 @@
+<!--pages/Dietanalysis/Dietanalysis.wxml-->
+<!-- <text>pages/Dietanalysis/Dietanalysis.wxml</text> -->
+<!-- <button style="display: table-row;" bindtap="gopageprojectrecord">早餐记录</button>
+<view> 热量摄入：{{breakfastfoodheart}}千焦</view> -->
+
+<!-- <button style="display: table-row;" bindtap="gopageprojectrecord">午餐记录</button>
+<view> 热量摄入：{{lunchfoodheart}}千焦</view> -->
+
+<!-- <button style="display: table-row;" bindtap="gopageexerciserecord">运动记录</button>
+<view> 热量消耗：{{exerciseuseheart}}</view> -->
+<van-cell>
+    <view slot="title">
+        <view class="van-cell-text" bindtap="gopageprojectrecord" data-name="早">早餐记录</view>
+        <van-swipe-cell right-width="{{ 65 }}" wx:for="{{blist}}" wx:key="index" data-id="{{blist[index].breakfastdataID}}" id="swipe-cell" async-close bind:close="delb">
+            <van-cell-group>
+                <van-cell title="{{blist[index].foodName}}" value="{{blist[index].foodheat}}千焦" data-id="{{blist[index].breakfastdataID}}" />
+            </van-cell-group>
+            <view slot="right" class="right">删除</view>
+        </van-swipe-cell>
+    </view>
+</van-cell>
+
+<van-cell>
+    <view slot="title">
+        <view class="van-cell-text" bindtap="gopageprojectrecord" data-name="午">午餐记录</view>
+        <van-swipe-cell right-width="{{ 65 }}" wx:for="{{llist}}" wx:key="index" data-id="{{llist[index].lunchdataID}}" id="swipe-cell" async-close bind:close="dell">
+            <van-cell-group>
+                <van-cell title="{{llist[index].foodName}}" value="{{llist[index].foodheat}}千焦" data-id="{{llist[index].lunchdataID}}" />
+            </van-cell-group>
+            <view slot="right" class="right">删除</view>
+        </van-swipe-cell>
+
+    </view>
+</van-cell>
+<van-cell>
+    <view slot="title">
+        <view class="van-cell-text" bindtap="gopageprojectrecord" data-name="晚">晚餐记录</view>
+        <van-swipe-cell right-width="{{ 65 }}" wx:for="{{dlist}}" wx:key="index" data-id="{{dlist[index].dinnerdataID}}" id="swipe-cell" async-close bind:close="deld">
+            <van-cell-group>
+                <van-cell title="{{dlist[index].foodName}}" value="{{dlist[index].foodheat}}千焦" data-id="{{dlist[index].dinnerdataID}}" />
+            </van-cell-group>
+            <view slot="right" class="right">删除</view>
+        </van-swipe-cell>
+
+    </view>
+</van-cell>
+<van-cell>
+    <view slot="title">
+        <view class="van-cell-text" bindtap="gopageexerciserecord" data-name="运动">运动记录</view>
+        <van-swipe-cell right-width="{{ 65 }}" wx:for="{{elist}}" wx:key="index" data-id="{{elist[index].exercisedataID}}" id="swipe-cell" async-close bind:close="dele">
+            <van-cell-group>
+                <van-cell title="{{elist[index].exerciseName}}" value="{{elist[index].exerciseheat}}千焦" data-id="{{elist[index].exercisedataID}}" />
+            </van-cell-group>
+            <view slot="right" class="right">删除</view>
+        </van-swipe-cell>
+    </view>
+</van-cell>
+
+<!-- <van-cell>
+    <view slot="title">
+        <view class="van-cell-text" bindtap="gopageprojectrecord" data-name="早">测试</view>
+        <van-swipe-cell right-width="{{ 65 }}" wx:for="{{blist}}" wx:key="index" data-id="{{blist[index].breakfastdataID}}" id="swipe-cell" async-close bind:close="del">
+            <van-cell-group>
+                <van-cell title="{{blist[index].foodName}}" data-id="{{blist[index].breakfastdataID}}" value="{{blist[index].foodheat}}千焦" />
+            </van-cell-group>
+            <view slot="right" class="right">删除</view>
+        </van-swipe-cell>
+    </view>
+</van-cell> -->
+
+

@@ -1,0 +1,7 @@
+/* pages/recommend/recommend.wxss */
+page {
+    background-color: #F7F7F7;
+}
+.value-class {
+    flex: none !important;
+  }

@@ -1,0 +1,33 @@
+<!--pages/exerciserecord/exerciserecord.wxml-->
+<!--pages/projectrecord/projectrecord.wxml-->
+<view class="block" >
+    <view class="inputcss">
+    <input  class="searchInput" bindblur="handleInputChange" />
+    <!-- <view class="search-btn" bindtap="handleSearch">搜索</view> -->
+    <button class='btn1' bindtap="handleSearch" >
+        <image class='btnImg' src='../../images/search.png'></image>
+        <view>搜索</view>
+    </button>
+</view>
+</view>
+<!-- <view wx:for="{{list}}" wx:key="index" class="show" bindtap="godetial" data-id="{{list[index].exerciseID}}" bindtap="pop_footer">
+    {{list[index].exerciseName}}
+</view> -->
+<van-cell-group title="搜索结果如下">
+<view wx:for="{{list}}" wx:key="index"  data-id="{{list[index].exerciseID}}" >
+  <van-cell title="{{list[index].exerciseName}}" value="{{list[index].exercisedateID}}" bind:click="pop_footer"/>
+</view>
+</van-cell-group>
+<!-- 阴影 -->
+<view class="yd_overlay   {{show?'yd_show_overlay':'yd_close_overlay'}}   yd_popup_footer" bindtap="close_overlay"></view>
+
+<button style="margin-top: 300px;" bindtap="handleSave">保存</button>
+
+<!-- 底部弹出view -->
+<view class="footer_container  {{show?'yd_footer_conter':'yd_close_overlay'}}  "  >
+    <view wx:for="{{list}}" wx:key="index">
+    {{list[index].calorieBurned}}千焦/小时
+    </view>
+<input type="text" placeholder="请输入运动时长（小时）" bindblur="handleInputSave" />
+<button bindtap="close_overlay">保存</button>
+</view>

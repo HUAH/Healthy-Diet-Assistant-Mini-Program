@@ -1,0 +1,77 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/record/record",
+        "pages/me/me",
+        "pages/search/search",
+        "pages/searchShow/searchShow",
+        "pages/heartremember/heartremember",
+        "pages/recommend/recommend",
+        "pages/BMI/BMI",
+        "pages/classify/classify",
+        "pages/rank/rank",
+        "pages/Dietanalysis/Dietanalysis",
+        "pages/detail/detail",
+        "pages/projectrecord/projectrecord",
+        "pages/exerciserecord/exerciserecord",
+        "pages/meal/meal",
+        "pages/setting/setting",
+        "pages/weighthistory/weighthistory",
+        "pages/mealdetial/mealdetial",
+        "pages/medetail/medetail"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "Weixin",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "black",
+        "selectedColor": "red",
+        "borderStyle": "white",
+        "list": [
+            {
+                "selectedIconPath": "images/index_green.png",
+                "iconPath": "images/index_black.png",
+                "pagePath": "pages/index/index",
+                "text": "首页"
+            },
+            {
+                "selectedIconPath": "images/record_green.png",
+                "iconPath": "images/record_black.png",
+                "pagePath": "pages/record/record",
+                "text": "记录"
+            },
+            {
+                "selectedIconPath": "images/me_green.png",
+                "iconPath": "images/me_black.png",
+                "pagePath": "pages/me/me",
+                "text": "我的"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json",
+    "usingComponents": {
+        "van-button": "@vant/weapp/button/index",
+        "van-tree-select": "@vant/weapp/tree-select/index",
+        "van-field": "@vant/weapp/field/index",
+        "van-cell": "@vant/weapp/cell/index",
+        "van-cell-group": "@vant/weapp/cell-group/index",
+        "van-checkbox": "@vant/weapp/checkbox/index",
+        "van-checkbox-group": "@vant/weapp/checkbox-group/index",
+        "van-switch": "@vant/weapp/switch/index",
+        "van-radio": "@vant/weapp/radio/index",
+        "van-radio-group": "@vant/weapp/radio-group/index",
+        "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+        "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+        "van-image": "@vant/weapp/image/index",
+        "van-sidebar": "@vant/weapp/sidebar/index",
+        "van-sidebar-item": "@vant/weapp/sidebar-item/index",
+        "van-grid": "@vant/weapp/grid/index",
+        "van-grid-item": "@vant/weapp/grid-item/index",
+        "van-popup": "@vant/weapp/popup/index",
+        "van-swipe-cell": "@vant/weapp/swipe-cell/index"
+    }
+}

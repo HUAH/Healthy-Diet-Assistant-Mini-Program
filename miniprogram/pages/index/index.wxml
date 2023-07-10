@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="form" bindtap="gopagesearch">
+    <view class="searchInput">搜索食物热量和营养</view>
+</view>
+<view class="block1" bindtap="gopagerecommend">
+    <view class="leftblock1" >
+        <image src="../../images/shipu.png" style="height: 100px; width:100px; margin-right: 15px;" mode="" />
+    </view>
+        <text class="text">推荐食谱</text>
+    <!-- <view class="rightblock1" bindtap="gopageBMI">
+        <image src="../../images/BMI.png" style="height: 100px; width:100px;  margin-right: 15px;" mode="" />
+        <text class="text">体重测试</text>
+    </view> -->
+</view>
+<view class="block2"  bindtap="gopageBMI">
+    <view class="leftblock2">
+        <image src="../../images/BMI.png" style="height: 100px; width:100px;  margin-right: 15px;" mode="" />
+    </view>
+        <text class="text">体重测试</text>
+</view>
+<view class="block1" bindtap="gopageclassify">
+    <view class="leftblock1" >
+        <image src="../../images/分类.png" style="height: 100px; width:100px;  margin-right: 15px;" mode="" />
+    </view>
+        <text class="text">食物分类</text>
+</view>
+<!-- <view class="block1">
+    <view class="leftblock"></view>
+    <view class="rightblock"></view>
+</view> -->

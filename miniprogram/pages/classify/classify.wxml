@@ -1,0 +1,12 @@
+<!--pages/classify/classify.wxml-->
+<!-- <text>pages/classify/classify.wxml</text> -->
+<view class="block1">
+    <van-grid gutter="{{ 10 }}">
+        <van-grid-item icon="fire-o" data-name="主食" bindtap="gopage" text="主食类" />
+        <van-grid-item icon="diamond-o" data-name="肉蛋" bindtap="gopage" text="肉蛋类" />
+        <van-grid-item icon="gift-card-o" data-name="豆制" bindtap="gopage" text="豆制品类" />
+        <van-grid-item icon="hot-o" data-name="蔬菜" bindtap="gopage" text="蔬菜类" />
+        <van-grid-item icon="birthday-cake-o" data-name="水果" bindtap="gopage" text="水果类" />
+        //
+    </van-grid>
+</view>

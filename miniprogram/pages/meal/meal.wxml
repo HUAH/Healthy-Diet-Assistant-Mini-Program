@@ -1,0 +1,14 @@
+<!--meal/meal.wxml-->
+<!-- <text>meal/meal.wxml</text> -->
+推荐食谱如下
+<van-cell-group>
+<view wx:for="{{list}}" wx:key="index" class="show" bindtap="gomealdetial" data-carbohydrate="{{list[index].carbohydrate}}" data-id="{{list[index].mealID}}" >
+    {{list[index].mealName}}
+    {{list[index].heat}}
+  <van-cell title="{{list[index].downtext}}" />
+</view>
+</van-cell-group>
+
+
+
+

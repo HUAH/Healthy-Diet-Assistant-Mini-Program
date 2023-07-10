@@ -1,0 +1,132 @@
+/* pages/me/me.wxss */
+page {
+    background-color: #F7F7F7;
+}
+
+.block1 {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: auto;
+    height: 100px;
+}
+
+.block2 {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: auto;
+    height: 90px;
+}
+
+.block2_ {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: auto;
+    height: auto;
+}
+
+.block3 {
+    background-color: yellow;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: auto;
+    height: 150px;
+}
+
+.block4 {
+    background-color: green;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: auto;
+    height: 150px;
+}
+
+.denglu {
+    border-radius: 25px;
+    background: #8AC007;
+    padding: 20px;
+    width: 300px;
+    height: 150px;
+}
+
+image {
+    border-radius: 35px;
+}
+
+.text-denglu {
+    font-size: 30px;
+    position: relative;
+    left: 24rpx;
+    top: -40rpx;
+}
+
+.weightcolumn {
+    text-align: center;
+    width: 33.33%;
+    height:40px;
+    background-color: #FFFFFF;
+    display: inline-block;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+.weightcolumndown {
+    width: 33.33%;
+    height: 20%;
+    text-align: center;
+    background-color: #FFFFFF;
+    display: inline-block;
+    flex-direction: column;
+}
+
+.BMIcolumn {
+    text-align: center;
+    width: 33.33%;
+    height:40px;
+    background-color: #FFFFFF;
+    display: inline-block;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+.BMIcolumndown {
+    width: 33.33%;
+    height: 30px;
+    text-align: center;
+    background-color: #FFFFFF;
+    display: inline-block;
+    flex-direction: column;
+}
+
+.force {
+    text-align: center;
+    width: 33.33%;
+    height:40px;
+    background-color: #FFFFFF;
+    display: inline-block;
+    flex-direction: column;
+    font-size: 25px;
+}
+.forcedown {
+    width: 33.33%;
+    height: 20px;
+    text-align: center;
+    background-color: #FFFFFF;
+    display: inline-block;
+    flex-direction: column;
+}
+
+  
+  

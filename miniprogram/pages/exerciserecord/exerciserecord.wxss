@@ -1,0 +1,87 @@
+/* pages/exerciserecord/exerciserecord.wxss */
+.block{
+    height: 100px;
+    width: 100%;
+}
+.inputcss {
+    position: relative;
+    height: 40px;
+   }
+    
+   .searchInput {
+    border: 1px solid #2c3036;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    border-radius: 20px;
+    color: #bebec4;
+    padding-left: 35px;
+   }
+   .search-btn{
+       background-color: green;
+       margin: auto;
+       height: 100px;
+       width: 150px;
+   }
+    .show{
+        background-color: yellow;
+        height: 25px;
+        width: 100%;
+    }
+
+
+    .yd_show_overlay {
+        height: 100%;
+      }
+      
+      .yd_close_overlay {
+        height: 0;
+      }
+      
+      .footer_container {
+        text-align: center;
+        line-height: 110rpx;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background:white;
+        border-radius: 20px 20px 0 0;
+        z-index: 99;
+        transition-property: height;
+        transition-duration: 900ms;
+        transition-timing-function: ease;
+      }
+      
+      .yd_popup_footer {
+        transition-property: height;
+        transition-duration: 900ms;
+        transition-timing-function: ease;
+      }
+      
+      .yd_footer_conter {
+        height: 50%;
+      }
+
+      .btn1 {
+        width: 80%;
+        margin-top: 20rpx;
+        background-color: burlywood;
+        color: white;
+        border-radius: 98rpx;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .btnImg {
+        margin-right: 8rpx;
+        width: 46rpx;
+        height: 46rpx;
+      }
+      
+      .btn1::after {
+        border-radius: 98rpx;
+        border: 0; 
+      }
+      

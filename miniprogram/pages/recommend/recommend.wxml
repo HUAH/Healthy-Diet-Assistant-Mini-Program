@@ -1,0 +1,57 @@
+<!--pages/recommend/recommend.wxml-->
+<!-- <text>pages/recommend/recommend.wxml</text> -->
+<van-cell-group title="请输入下列身体数据">
+  <van-cell-group>
+    <van-field
+    label="身高"
+    placeholder="请输入身高"
+    bind:change="onChangeheight"
+  />
+  <van-field
+    label="体重"
+    placeholder="请输入体重"
+    bind:change="onChangeweight"
+  />
+  <van-field
+    label="年龄"
+    placeholder="请输入年龄"
+    bind:change="onChangeold"
+  />
+  <van-cell
+      title="性别"
+      value-class="value-class"
+    >
+    <radio-group name="gender" bindchange="gender">
+      <radio value="1" class="radio-text">男</radio>
+      <radio value="0" class="radio-text">女</radio>
+    </radio-group>
+    </van-cell>
+</van-cell-group>
+</van-cell-group>
+<van-cell-group title="过敏原">
+  <!-- <van-cell title="单元格" value="内容" /> -->
+  <van-cell-group>
+    <van-cell
+      title="海鲜"
+      value-class="value-class"
+    >
+    <switch  bindchange="oneChange" size="22px"/>
+    </van-cell>
+
+    <van-cell
+      title="豆制品"
+      value-class="value-class"
+    >
+    <switch  bindchange="twoChange" size="22px"/>
+    </van-cell>
+  </van-cell-group>
+  <van-cell-group title="近期身体需求">
+  </van-cell-group>
+</van-cell-group>
+<radio-group bindchange="radioChange"> 
+  <p style="margin-right:20rpx;align-items: center;" wx:for="{{radioItems}}" wx:key="*this">
+    <radio style="margin-right:-10rpx;" id="radio{{index}}" value="{{item.value}}" checked="{{item.checked}}"  />
+    <label for="radio{{index}}"> {{item.name}}</label>
+  </p>
+</radio-group>
+<van-button round type="info" style="margin-left: 38%;" bindtap="start" >点击生成</van-button>

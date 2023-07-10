@@ -1,0 +1,19 @@
+<!--pages/detail/detail.wxml-->
+<!-- <text>pages/detail/detail.wxml</text> -->
+<view wx:for="{{list}}" wx:key="index">
+    <view class="block1">
+        <image src="{{list[index].pic}}" style="width:70px;height: 70px; margin-top: 10px;" />
+        <view class="name">
+            {{list[index].foodName}}
+        </view>
+    </view>
+    <van-cell-group title="营养信息">
+        <van-cell title="项目" value="每[100克]可食用部分" size="large" />
+        <van-cell title="热量" value="{{list[index].heat}}千卡"  />
+        <van-cell title="蛋白质" value="{{list[index].protein}}克"  />
+        <van-cell title="脂肪" value="{{list[index].fat}}克"  />
+        <van-cell title="碳水化合物" value="{{list[index].carbohydrate}}克"  />
+        <van-cell title="膳食纤维" value="{{list[index].heat}}克"  />
+        <van-cell title="糖" value="{{list[index].heat}}克"  />
+    </van-cell-group>
+</view>

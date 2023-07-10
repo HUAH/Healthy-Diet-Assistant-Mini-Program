@@ -1,0 +1,35 @@
+<!--pages/record/record.wxml-->
+<!-- <view class="block0">
+    <view class="leftblock">每日打卡</view>
+    <view class="rightblock">健康习惯</view>
+</view> -->
+<view class="block1">
+    <view class="strip">饮食摄入</view>
+    <view class="rememberbutton" bindtap="gopageDietanalysis">
+        <text style="color: white;">记录</text>
+    </view>
+    <view class="data" bindtap="gopageheartrem">{{allgetheat}}千卡{{time}}</view>
+    <view class="img">
+        <image src="../../images/柱状图.png" style="height: 100px; width: 160px;"/>
+    </view>
+</view>
+<view class="block1">
+    <view class="strip">运动消耗</view>
+    <view class="rememberbutton" bindtap="gopageDietanalysis">
+        <text style="color: white;">记录</text>
+    </view>
+    <view class="data" bindtap="gopageheartrem">{{alluseheat}}千卡{{time}}</view>
+    <view class="img">
+        <image src="../../images/柱状图 (1).png" style="height: 100px; width: 160px;"/>
+    </view>
+</view>
+<view class="block1">
+    <view class="strip">体重记录</view>
+    <view class="rememberbutton" bindtap="saveweight">
+        <text style="color: white;">记录</text>
+    </view>
+    <view class="data" bindtap="gopageheighthistory">{{weight}}公斤</view>
+    <view class="img">
+        <image src="../../images/unstack.png" style="height: 100px; width: 135px;"/>
+    </view>
+</view>

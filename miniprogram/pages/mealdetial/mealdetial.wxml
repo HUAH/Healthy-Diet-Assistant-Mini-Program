@@ -1,0 +1,22 @@
+<!--pages/mealdetial/mealdetial.wxml-->
+<!-- <text>pages/mealdetial/mealdetial.wxml</text> -->
+<view wx:for="{{list}}" wx:key="index">
+    <!-- <view class="block1"> -->
+        <!-- <image src="{{list[index].pic}}" style="width:70px;height: 70px; margin-top: 10px;" /> -->
+        <view class="name">
+            {{list[index].mealName}}
+        </view>
+    <!-- </view> -->
+    <van-cell-group title="推荐搭配">
+        <van-cell title="早餐" value="{{list[index].breakfast}}" size="large" />
+        <van-cell title="早加餐" value="{{list[index].breakfastadd}}" size="large" />
+        <van-cell title="午餐" value="{{list[index].lunch}}" size="large" />
+        <van-cell title="午加餐" value="{{list[index].lunchadd}}" size="large" />
+        <van-cell title="晚餐" value="{{list[index].dinner}}" size="large" />
+    </van-cell-group>
+    <van-cell-group title="营养分析">
+        <van-cell title="碳水化合物" value="{{list[index].carbohydrate}}克" label="55%" />
+        <van-cell title="蛋白质" value="{{list[index].protein}}克" label="55%" />
+        <van-cell title="脂肪" value="{{list[index].fat}}克" label="55%" />
+    </van-cell-group>
+</view>

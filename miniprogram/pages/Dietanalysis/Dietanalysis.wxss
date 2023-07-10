@@ -1,0 +1,11 @@
+/* pages/Dietanalysis/Dietanalysis.wxss */
+.right{
+    background-color: red;
+    height: inherit;
+    width: 65px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  

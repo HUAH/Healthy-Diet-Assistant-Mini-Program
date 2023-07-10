@@ -1,0 +1,9 @@
+<!--pages/searchShow/searchShow.wxml-->
+<!-- <text>pages/searchShow/searchShow.wxml</text> -->
+<view style="margin-left: 100px; font-size: 25px;" >该类食物如下</view>
+<van-cell-group>
+    <view wx:for="{{list}}" wx:key="index" class="show" bindtap="godetial" data-id="{{list[index].foodID}}">
+        <text style="font-size: 23px; margin-left: 20px;">{{list[index].foodName}}</text>
+        <van-cell title="{{list[index].heat}}千卡/100克" />
+    </view>
+</van-cell-group>

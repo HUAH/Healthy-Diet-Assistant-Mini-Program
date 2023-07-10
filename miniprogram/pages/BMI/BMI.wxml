@@ -1,0 +1,20 @@
+<!--pages/BMI/BMI.wxml-->
+<!-- <text>pages/BMI/BMI.wxml</text> -->
+<!-- 身高（cm）<input type="text" name="height"  bindinput="heightInput" placeholder="身高" />
+体重（kg）<input type="text" name="weight"  bindinput="weightInput" placeholder="体重" /> -->
+
+<view class="view-contain-ti">
+    <text class="text-ti">身高（cm）</text>
+    <input type="text" name="height" class="text-word" bindinput="heightInput" />
+</view>
+
+<view class="view-contain-ti">
+    <text class="text-ti">体重（kg）</text>
+    <input type="text" name="weight" class="text-word" bindinput="weightInput" />
+</view>
+
+<button  bindtap="bmicount">BMI计算</button>
+<view>{{bmi}}</view>
+  <view>{{info}}</view>
+
+  <button  bindtap="saveBMI">保存BMI</button>
